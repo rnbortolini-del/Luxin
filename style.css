@@ -1,0 +1,56 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.loading-screen {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url('assets/loading-bg.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+/* Logo */
+.logo {
+  width: 300px; /* ajuste conforme o tamanho desejado */
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+/* Barra de loading */
+.loading-bar {
+  width: 300px;
+  max-width: 80%;
+  height: 25px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid rgba(255,255,255,0.8);
+  margin-bottom: 20px;
+}
+
+.loading-fill {
+  width: 0%;
+  height: 100%;
+  background: #ffd700; /* amarelo ouro */
+  transition: width 0.3s ease;
+}
+
+/* Texto de dicas */
+.tip {
+  font-size: 16px;
+  text-align: center;
+  max-width: 80%;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
